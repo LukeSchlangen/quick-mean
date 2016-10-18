@@ -11,7 +11,7 @@ app.listen(portDecision, function(){
 
 app.use(index);
 
-app.static(path.resolve('static')); // This is wrong
+app.static('static'); // This is wrong
 
 bodyParser.urlencoded({extended: true});
 bodyParser.json();
