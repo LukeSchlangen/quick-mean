@@ -11,7 +11,7 @@ app.listen(portDecision, function(){
 
 app.use(index);
 
-app.static('static'); // This is wrong
+app.use(express.static('public'));
 
 bodyParser.urlencoded({extended: true});
 bodyParser.json();
